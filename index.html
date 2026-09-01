@@ -1,1 +1,28 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Lab — Build it. Test it. Break it. Improve it.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">AI</div><div><strong>AI Lab</strong><span>Build it. Test it. Break it. Improve it.</span></div></div>
+      <div class="student-controls">
+        <label>Student name<input id="studentName" value="Student" /></label>
+        <label>Year level<select id="yearLevel"><option>7</option><option>8</option><option selected>9</option><option>10</option><option>11</option><option>12</option></select></label>
+      </div>
+      <div class="overall-progress"><div><span>Course progress</span><strong id="progressText">0% complete</strong></div><div class="progress-track"><div id="progressBar" class="progress-fill"></div></div></div>
+      <nav id="lessonNav"></nav>
+      <div class="sidebar-actions"><button id="teacherToggle" class="secondary">Teacher View</button><button id="resetBtn" class="ghost">Reset demo</button></div>
+    </aside>
+    <main class="main">
+      <section id="studentView"></section>
+      <section id="teacherView" class="hidden"></section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
