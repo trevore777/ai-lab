@@ -11,8 +11,9 @@
     <aside class="sidebar">
       <div class="brand"><div class="logo">AI</div><div><strong>AI Lab</strong><span>Build it. Test it. Break it. Improve it.</span></div></div>
       <div class="student-controls">
-        <label>Student name<input id="studentName" value="Student" /></label>
+        <input id="studentName" type="hidden" value="Student" />
         <label>Year level<select id="yearLevel"><option>7</option><option>8</option><option selected>9</option><option>10</option><option>11</option><option>12</option></select></label>
+        <small>No student name or identifying information is required.</small>
       </div>
       <div class="overall-progress"><div><span>Course progress</span><strong id="progressText">0% complete</strong></div><div class="progress-track"><div id="progressBar" class="progress-fill"></div></div></div>
       <nav id="lessonNav"></nav>
